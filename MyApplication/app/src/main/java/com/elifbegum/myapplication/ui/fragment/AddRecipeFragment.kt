@@ -12,7 +12,6 @@ import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.elifbegum.myapplication.databinding.FragmentAddRecipeBinding
 import com.elifbegum.myapplication.ui.viewmodel.AddRecipeViewModel
-import com.elifbegum.myapplication.ui.fragment.AddRecipeFragmentDirections
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 

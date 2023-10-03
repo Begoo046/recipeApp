@@ -9,18 +9,18 @@ plugins {
 android {
     namespace = "com.elifbegum.myapplication"
     compileSdk = 34
+
     buildFeatures {
         viewBinding = true
         dataBinding = true
     }
-
 
     defaultConfig {
         applicationId = "com.elifbegum.myapplication"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
-        versionName ="1.0"
+        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -35,13 +35,14 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
 }
+
 
 dependencies {
 
@@ -76,7 +77,7 @@ dependencies {
 
     // Coroutines
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")
 
     // Shimmer(used)
     implementation ("com.facebook.shimmer:shimmer:0.5.0")
